@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import s from "./auth.module.css";
-import logo from "../../assets/icons/logo.png";
+import logo from "../../assets/icons/travel-logo.png";
 import { FaRegUser } from "react-icons/fa";
 import MuiAppBar from "@mui/material/AppBar";
 import { FiLock } from "react-icons/fi";
@@ -39,10 +39,10 @@ const Login = () => {
 
 const handleClick =async()=>{
 let payload ={
-  username:email,
+  userName:email,
   password:password
 }
- let res  = await axios.post("http://13.202.189.57/api/user/login",payload)
+ let res  = await axios.post("https://triptaktix.com/api/user/login",payload)
  try {
   if(res?.data?.success){
     const token = res.data.token;

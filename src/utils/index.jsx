@@ -5,6 +5,6 @@ const getBaseUrl = () => {
 export { getBaseUrl };
 
 const getBaseUrl2 = () => {
-  return "http://13.202.189.57/api/user/";
+  return "https://triptaktix.com/api/user/";
 };
 export { getBaseUrl2 };
